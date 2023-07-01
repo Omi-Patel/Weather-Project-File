@@ -8,18 +8,22 @@
     "node": "18.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Om Patel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "firebase": "^9.23.0",
     "gh-pages": "^5.0.0",
     "hbs": "^4.2.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
