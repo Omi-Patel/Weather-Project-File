@@ -1,20 +1,27 @@
 {
+  "homepage": "https://Omi-Patel.github.io/Weather-Project-File",
   "name": "weather-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "engines": {
-    "node":"18.x"
+    "node": "18.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node src/app.js"
+    "start": "node src/app.js",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "author": "Om Patel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "hbs": "^4.2.0",
     "nodemon": "^2.0.21"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
